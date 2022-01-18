@@ -1,7 +1,11 @@
+import Notepad from "../components/Notepad"
+
 function Home() {
     return (
         <div>
-            Notes
+            
+            <Notepad />
+ 
         </div>
     )
 }

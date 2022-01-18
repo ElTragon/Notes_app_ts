@@ -12,20 +12,20 @@ function Navbar(props: AppProps) {
         <div className='container mx-auto'>
           <div className='flex-none px-2 mx-2'>
             <CgNotes className='inline pr-2 text-3xl' />
-            {title}
-            {/* <Link to='/' className='text-lg font-bold align-middle '>
-              
-            </Link> */}
+          
+            <Link to='/' className='text-lg font-bold align-middle '>
+              {title}
+            </Link>
           </div>
   
           <div className='flex-1 px-1 mx-2'>
             <div className='flex justify-end'>
-              {/* <Link className='btn btn-ghost btn-sm rounded-btn' to='/'>
+              <Link className='btn btn-ghost btn-sm rounded-btn hover:bg-sky-700' to='/'>
                 Home
               </Link>
-              <Link className='btn btn-ghost btn-sm rounded-btn' to='/about'>
+              <Link className='btn btn-ghost btn-sm rounded-btn hover:bg-sky-700' to='/about'>
                 About
-              </Link> */}
+              </Link>
             </div>
           </div>
         </div>

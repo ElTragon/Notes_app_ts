@@ -8,11 +8,11 @@ function NotFound() {
                 <div className="max-w-lg">
                     <h1 className="text-8xl font-bold mb-6">Opps!!</h1>
                     <p className="text-3xl mb-8">404 - Page not found!</p>
-                    {/* <Link to='/' className='btn btn-primary btn-md'> */}
-                        <div className='btn btn-primary btn-md'>
-                        <GoHome className='mb-2'/>
-                        Back to Home</div>
-                    {/* </Link> */}
+                    <Link to='/' className='btn btn-primary btn-md '>
+                        <GoHome className='text-2xl mr-2' />
+                       
+                        Back to Home
+                    </Link>
                 </div>
             </div>
         </div>

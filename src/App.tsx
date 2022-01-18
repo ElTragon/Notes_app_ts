@@ -5,6 +5,11 @@ import React from 'react';
 
 import Footer from './layout/Footer'
 import Navbar from './layout/Navbar';
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+import Home from './pages/Home'
+import NotFound from './pages/NotFound'
+import About from './pages/About'
+
 
 interface  AppProps  {
   title: string
@@ -15,13 +20,25 @@ function App() {
   //   title: 'My Notes'
   // }
 
-  const title_ = 'My Notes'
+    const title = 'My Notes'
   return (
-    <div className='flex flex-col justify-between h-screen'>
-      <Navbar title={'swwwwwwwww'}></Navbar>
-      <h1 className='text-3xl font-bold underline'>Hello world!</h1>
+
+    <Router>
+      <div className='flex flex-col justify-between h-screen'>
+      <Navbar title={title}></Navbar>
+      <main className="container mx-auto px-3 pb-12">
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/notfound' element={<NotFound />} />
+          <Route path='/*' element={<NotFound />} />
+        </Routes>
+      </main>
       <Footer />
-    </div>
+     </div> 
+    </Router>
+
+    
   );
 }
 
