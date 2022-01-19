@@ -1,13 +1,13 @@
-import Notepad from "../components/Notepad"
+import Noteheader from '../components/Noteheader'
+import Addnote from '../components/Addnote';
 
 function Home() {
-    return (
-        <div>
-            
-            <Notepad />
- 
-        </div>
-    )
+  return (
+    <div>
+      <Noteheader />
+      <Addnote />
+    </div>
+  );
 }
 
-export default Home
+export default Home;
